@@ -7,16 +7,15 @@ var server = require('http').Server(app)
 
 // Default settings
 var config = require('./config.json')
-var port = config.port
+var port = config.port || 3000
 
 // app.use for public folder
-app.use(bodyParser.urlencoded({extended: true}))
 app.use('/assets', express.static(__dirname + '/assets'))
 
 // Routers
 app.get('/', function(req, res){
 	console.log("[Connect] Get request to '/'")
-	res.sendFile(__dirname+'index.html')
+	res.sendFile(__dirname + '/index.html')
 })
 
 // Listen on port
