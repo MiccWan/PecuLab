@@ -1,0 +1,22 @@
+{
+  "name": "peculab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiccWan/PecuLab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiccWan/PecuLab/issues"
+  },
+  "homepage": "https://github.com/MiccWan/PecuLab#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
