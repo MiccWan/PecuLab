@@ -17,7 +17,11 @@ app.get('/', function(req, res){
 	console.log("[Connect] Get request to '/'")
 	res.sendFile(__dirname + '/pages/index.html')
 })
-
+// Routers
+app.get('/page', function(req, res){
+	console.log("[Connect] Get request to '/'")
+	res.sendFile(__dirname + '/pages/page.html')
+})
 // Listen on port
 server.listen(port, function(){
 	console.log("Server is running at port", port)
