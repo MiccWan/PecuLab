@@ -10,12 +10,12 @@ var config = require('./config.json')
 var port = config.port || 3000
 
 // app.use for public folder
-app.use('/assets', express.static(__dirname + '/assets'))
+app.use('/', express.static(__dirname + '/public'))
 
 // Routers
 app.get('/', function(req, res){
 	console.log("[Connect] Get request to '/'")
-	res.sendFile(__dirname + '/index.html')
+	res.sendFile(__dirname + '/pages/index.html')
 })
 
 // Listen on port
