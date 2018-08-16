@@ -1707,3 +1707,10 @@ i.icon-white {
 		width: 100%;
 	}
 }
+.modal-body {
+    font-size: 20px;
+    padding-left: 50px;
+}
+#contact{
+    text-align: center;
+}
