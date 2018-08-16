@@ -118,6 +118,7 @@ jQuery(document).ready(function($) {
 		$container.isotope({ filter: selector });
 		return false;
 	});
+	$('#filters a').eq(0).click()
 
 	// flexslider main
 	$('#main-flexslider').flexslider({						
