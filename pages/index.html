@@ -11,6 +11,8 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="./">
+	<script src=""></script>
 
 	<!-- =======================================================
     Theme Name: Maxim
@@ -19,6 +21,15 @@
     Author URL: https://bootstrapmade.com
 	======================================================= -->
 </head>
+<style>
+	.modal-body {
+		font-size: 20px;
+		padding-left: 50px;
+	}
+</style>
+<script>
+
+</script>
 
 <body>
 	<!-- navbar -->
@@ -208,12 +219,10 @@
 				</div>
 				<div class="span4 animated flyIn">
 					<div class="service-box">
-						<img src="img/icons/lab.png" alt="" />
+						<img src="img/icons/lab.png" alt="" href="#myModal" role="button" data-toggle="modal" />
 						<h2>Teaching</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, expedita.</p>
 					</div>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-					</p>
 				</div>
 
 				<div class="span4 animated-fast flyIn">
@@ -657,18 +666,53 @@
 	<a href="#" class="scrollup">
 		<i class="icon-angle-up icon-square icon-bgdark icon-2x"></i>
 	</a>
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/jquery.nav.js"></script>
-	<script src="js/jquery.localScroll.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/jquery.prettyPhoto.js"></script>
-	<script src="js/isotope.js"></script>
-	<script src="js/jquery.flexslider.js"></script>
-	<script src="js/inview.js"></script>
-	<script src="js/animate.js"></script>
-	<script src="js/custom.js"></script>
-	<script src="contactform/contactform.js"></script>
+	<!-- Modal -->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 id="myModalLabel">Courses</h2>
+		</div>
+		<div class="modal-body">
+			<ol>
+
+				<li>
+					<a href="https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=H03%2001300&class=01&dpt_code=H020&ser_no=52064&semester=107-1&lang=CH"
+					 style="text-decoration:none">使用R語言進行資料分析</a>
+				</li>
+				<li>
+					<a href="https://csx.aca.ntu.edu.tw/modules/index.php?csn=4aaa67&default_fun=syllabus&current_lang=chinese" style="text-decoration:none">資料科學程式設計</a>
+				</li>
+
+				<li>
+					<a href="https://csx.aca.ntu.edu.tw/modules/index.php?csn=e76981&default_fun=syllabus&current_lang=chinese" style="text-decoration:none">進階軟體開發專題</a>
+				</li>
+				<li>
+					<a href="https://ceiba.ntu.edu.tw/modules/index.php?csn=0fac4f&default_fun=syllabus&current_lang=chinese" style="text-decoration:none">數位應用程式設計</a>
+				</li>
+				<li>
+					<a href="https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=H02%2030050&class=&dpt_code=H020&ser_no=29302&semester=107-1&lang=CH"
+					 style="text-decoration:none">專題研究</a>
+				</li>
+			</ol>
+		</div>
+		<div class="modal-footer">
+			<button id="saveBtn" class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+		</div>
+	</div>
+
+	<script src="js/jquery.js "></script>
+	<script src="js/jquery.scrollTo.js "></script>
+	<script src="js/jquery.nav.js "></script>
+	<script src="js/jquery.localScroll.js "></script>
+	<script src="js/bootstrap.js "></script>
+	<script src="js/jquery.prettyPhoto.js "></script>
+	<script src="js/isotope.js "></script>
+	<script src="js/jquery.flexslider.js "></script>
+	<script src="js/inview.js "></script>
+	<script src="js/animate.js "></script>
+	<script src="js/custom.js "></script>
+	<script src="contactform/contactform.js "></script>
 
 </body>
 
