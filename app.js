@@ -34,7 +34,7 @@ app.post('/restart', function(req, res){
 	console.log("[Connect] POST request to '/restart'")
 	if(req.body.password == config.password){
 		shell.exec('./pull.sh')
-		res.send('Server restarted!')
+		res.redirect(303, '/')
 	}
 	else{
 		res.send('meow')
