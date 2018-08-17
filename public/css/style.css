@@ -372,7 +372,7 @@ header .logo {
 /* --- Header slider --- */
 #header-wrapper.header-slider {
 	/* background: #444 url('https://picsum.photos/200/300?image=756') no-repeat center center fixed; */
-	background:url('https://picsum.photos/800/900?image=756');
+	background:url('../img/bg/DSC_0198.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
