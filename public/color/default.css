@@ -1,8 +1,8 @@
 ::-moz-selection {
-background:#e06d5e;
+	background:#e06d5e;
 }
 ::selection {
-background:#e06d5e;
+	background:#e06d5e;
 }
 
 .navbar .brand a:hover {
