@@ -57,10 +57,11 @@ div, article, section, header, footer, nav, li {
 }
 body {
 	background:#fff;
-	color: #444;
+	color: #333;
 	font-size: 16px;
 	font-weight:300;
-	font-family:'Open Sans', Arial, sans-serif;
+	/*font-family:'Open Sans', Arial, sans-serif;*/
+	font-family: "微軟正黑體", "Microsoft JhengHei", "標楷體", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -192,9 +193,9 @@ a:hover, a:active {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
-	color: #312f2b;
+	color: #383838;
 	line-height:1.1em;
-	font-family:'Open Sans', Arial, sans-serif;
+	font-family: "微軟正黑體", "Microsoft JhengHei", "標楷體", 'Open Sans', Arial, sans-serif;
 }
 h1 {
 	font-size: 36px;
@@ -357,7 +358,7 @@ ul#menu-main > li > a:focus {
 }
 #header-wrapper h2 {
 	color: #fff;
-	font-family: 'Open Sans', sans serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 2em;
 	font-weight: normal;
 	margin: 0.5em 0;
@@ -408,7 +409,7 @@ header .logo {
 
 #header-wrapper input[type=text] {
 	background: rgba(227, 231, 228, 1);
-	font-family: 'Open Sans', sans serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3125em;
 	border: 0;
 	text-align: center;
@@ -931,7 +932,7 @@ section#about {
 
 #contact-form input[type=text], .contactForm textarea {
 	background: rgba(227, 231, 228, 1);
-	font-family: 'Open Sans', sans serif;
+	font-family: 'Open Sans', sans-serif;
 	border: 0;
 	font-size:16px;
 	text-align: left;

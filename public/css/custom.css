@@ -1,3 +1,42 @@
 .custom-team{
 	max-width: 90%;
 }
+
+.modal-header > h2{
+	margin: 10px 0;
+}
+.tab-content > .tab-pane{
+	padding: 0;
+}
+
+.tab-pane hr{
+	margin: 20px;
+}
+.tab-pane ul{
+	margin: 0 0 10px 25px;
+	font-weight: 400;
+}
+
+.tab-pane ul li{
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.tab-pane h1{
+	font-size: 24px;
+	line-height: 1.4;
+	margin: 20px 0;
+}
+.tab-pane h2{
+	font-size: 20px;
+	line-height: 1.5;
+	margin: 20px 0 10px 0;
+}
+
+.tab-pane-content{
+	margin: 20px 0 30px 5px;
+}
+
+#contact p{
+	font-size: 28px;
+}
