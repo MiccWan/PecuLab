@@ -29,4 +29,4 @@ Finally, open your server using:
 $ node app.js
 ```
 
-Test is by connecting to "http://localhost:<YOUR_PORT>"
+Test your app by connecting to "http://localhost:<YOUR_PORT>"
