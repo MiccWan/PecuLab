@@ -12,7 +12,7 @@
 	<link href="css/custom.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
 	<!--<link rel="shortcut icon" href="/favicon.png">-->
-	<link rel="shortcut icon" href="img/logo_black.png">
+	<link rel="shortcut icon" href="/logo_black.png">
 
 
 
@@ -246,9 +246,9 @@
 		<div class="container">
 			<!-- Four columns -->
 			<div class="row">
-				<div class="span4 animated-fast flyIn">
+				<div class="span4 animated-fast flyIn" href="#projectModal" role="button" data-toggle="modal">
 					<div class="service-box">
-						<img src="img/icons/laptop.png" alt="" href="#projectModal" role="button" data-toggle="modal" />
+						<img src="img/icons/laptop.png" alt=""/>
 						<h2>Research</h2>
 						<p>
 							Project about text mininig<br/>
@@ -256,11 +256,10 @@
 						</p>
 					</div>
 				</div>
-				<div class="span4 animated flyIn">
+				<div class="span4 animated-fast flyIn" href="#teachingModal" role="button" data-toggle="modal">
 					<div class="service-box">
-						<img src="img/icons/lab.png" alt="" href="#myModal" role="button" data-toggle="modal" />
+						<img src="img/icons/lab.png" alt=""/>
 						<h2>Teaching</h2>
-						<!-- Button trigger modal -->
 						<p>
 							NTU-CSX COURSES:
 						</p>
@@ -268,12 +267,11 @@
 					</div>
 				</div>
 
-				<div class="span4 animated-fast flyIn">
+				<div class="span4 animated-fast flyIn" href="#serviceModal" role="button" data-toggle="modal">
 					<div class="service-box">
 						<img src="img/icons/camera.png" alt="" />
 						<h2>Services</h2>
 						<p>Python summer workshop with Institute for Information Industry</p>
-
 					</div>
 				</div>
 
@@ -447,24 +445,24 @@
 	</a>
 
 	<!-- project modal -->
-	<div id="projectModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div id="projectModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h2 id="myModalLabel">Research: 資料科學、金融科技、文字探勘</h2>
+			<h2 id="projectModalLabel">Research: 資料科學、金融科技、文字探勘</h2>
 		</div>
 		<div class="modal-body">
 			<!-- <h4>Research</h4> -->
 			<div class="tabbable">
 				<ul class="nav nav-tabs">
 					<li class="active">
-						<a href="#one" data-toggle="tab">已完成計畫</a>
+						<a href="#project_one" data-toggle="tab">已完成計畫</a>
 					</li>
 					<li>
-						<a href="#two" data-toggle="tab">執行中計畫
+						<a href="#project_two" data-toggle="tab">執行中計畫
 						</a>
 					</li>
 					<li>
-						<a href="#three" data-toggle="tab">招募中計畫</a>
+						<a href="#project_three" data-toggle="tab">招募中計畫</a>
 					</li>
 				</ul>
 
@@ -479,7 +477,8 @@
 							<li>執行期間: xxxxxxxxxx</li>
 							<li>合作單位: xxxxxxxxxx</li>
 							<li>計畫編號: xxxxxxxxxx</li>
-							<li>執行成員:
+							<li>
+							執行成員:
 								<br/>&nbsp;<i class="icon-male"></i>&nbsp;xxxxxxxxxx
 								<br/>&nbsp;<i class="icon-male"></i>&nbsp;xxxxxxxxxx
 								<br/>&nbsp;<i class="icon-male"></i>&nbsp;xxxxxxxxxx
@@ -487,7 +486,7 @@
 						</ul>
 					</div> -->
 					<!-- end project -->
-					<div class="tab-pane active" id="one">
+					<div class="tab-pane active" id="project_one">
 						<h1>
 							<i class="icon-ok"></i>&nbsp;已完成產學合作計畫：
 						</h1>
@@ -501,7 +500,8 @@
 							<ul>
 								<li>執行期間: 2016/03/01 ~ 2017/03/31 </li>
 								<li>合作單位: 中國信託商業銀行</li>
-								<li>執行成員:
+								<li>
+									執行成員:
 									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台灣大學資工所陳俊豪
 									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台灣大學經濟所謝長潤
 									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台北大學資工系王均捷
@@ -522,7 +522,8 @@
 							<ul>
 								<li>執行期間: 2017/06/01 ~ 2018/06/30 </li>
 								<li>計畫編號: 106-3114-E-001 -005 -</li>
-								<li>執行成員:
+								<li>
+									執行成員:
 									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台灣大學資工所陳俊豪
 									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台北大學資工系王均捷
 								</li>
@@ -530,7 +531,7 @@
 						</div>
 						<!-- end project -->
 					</div>
-					<div class="tab-pane" id="two">
+					<div class="tab-pane" id="project_two">
 						<h1>
 							<i class="icon-star"></i>&nbsp;執行中科技部計畫：
 						</h1>
@@ -546,7 +547,8 @@
 							<ul>
 								<li>執行期間: 2018/06/01 ~ 2019/05/31 </li>
 								<li>計畫編號: 107-2218-E-002 -065 -</li>
-								<li>執行成員:
+								<li>
+									執行成員:
 									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台灣大學電機所邱嘉豪
 									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台灣大學資工所廖威仲
 								</li>
@@ -564,14 +566,15 @@
 							<ul>
 								<li>執行期間: 2018/08/01 ~ 2021/07/31 </li>
 								<li>計畫編號: 107-2410-H-002 -050 -MY3</li>
-								<li>執行成員:
+								<li>
+									執行成員:
 									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立臺灣大學生機所林毓祥
 								</li>
 							</ul>
 						</div>
 						<!-- end project -->
 					</div>
-					<div class="tab-pane" id="three">
+					<div class="tab-pane" id="project_three">
 						<h1>
 							<i class="icon-user"></i>&nbsp;招募中科技部計畫：
 						</h1>
@@ -635,37 +638,263 @@
 		<div class="modal-footer">
 			<button id="saveBtn" class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
 		</div>
-
 	</div>
 	<!-- teaching Modal -->
-	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div id="teachingModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="teachingModalLabel" aria-hidden="true">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h2 id="myModalLabel">Courses</h2>
+			<h2 id="teachingModalLabel">Teaching: Computer Science for Anything 資料科學、機器學習、全端開發</h2>
 		</div>
 		<div class="modal-body">
-			<i class="icon-globe">
-				<a href="https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=H03%2001300&class=01&dpt_code=H020&ser_no=52064&semester=107-1&lang=CH"
-				 style="text-decoration:none">使用R語言進行資料分析</a>
-			</i>
-			</br>
-			<i class="icon-star">
-				<a href="https://csx.aca.ntu.edu.tw/modules/index.php?csn=4aaa67&default_fun=syllabus&current_lang=chinese" style="text-decoration:none">資料科學程式設計</a>
-			</i>
-			</br>
-			<i class="icon-sun">
-				<a href="https://csx.aca.ntu.edu.tw/modules/index.php?csn=e76981&default_fun=syllabus&current_lang=chinese" style="text-decoration:none">進階軟體開發專題</a>
-			</i>
-			</br>
-			<i class="icon-desktop">
-				<a href="https://ceiba.ntu.edu.tw/modules/index.php?csn=0fac4f&default_fun=syllabus&current_lang=chinese" style="text-decoration:none">數位應用程式設計</a>
-			</i>
-			</br>
-			<i class="icon-magnet">
-				<a href="https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=H02%2030050&class=&dpt_code=H020&ser_no=29302&semester=107-1&lang=CH"
-				 style="text-decoration:none">專題研究</a>
-			</i>
-			</br>
+			<!-- <h4>Research</h4> -->
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#teaching_one" data-toggle="tab">107-1 全國夏季學院</a>
+					</li>
+					<li>
+						<a href="#teaching_two" data-toggle="tab">107-1 學期課程
+						</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="teaching_one">
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="https://n2-data-science-programming.gitbook.io/rsummer/">
+									<i class="icon-book"></i>&nbsp;
+									8N2033 資料科學程式設計 Data Science Programming
+								</a>
+							</h2>
+							<ul>
+								<li>
+									課程助教:
+									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立臺灣大學數學系王冠人
+									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台灣大學數學系萬俊彥
+								</li>
+							</ul>
+						</div>
+						<!-- end project -->
+					</div>
+					<div class="tab-pane" id="teaching_two">
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="https://csx.aca.ntu.edu.tw/1071CSX0013_">
+									<i class="icon-book"></i>&nbsp;
+									CSX 0013 數位應用程式設計 Applications for Computer Programming
+								</a>
+							</h2>
+							<ul>
+								<li>
+									課程助教:
+									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立臺灣大學資工系廖威仲
+								</li>
+							</ul>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="https://csx.aca.ntu.edu.tw/1071CSX0014_01">
+									<i class="icon-book"></i>&nbsp;
+									CSX 0014 使用R語言進行資料分析 Using R for Data Analysis
+								</a>
+							</h2>
+							<ul>
+								<li>
+									課程助教:
+									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立臺灣大學數學系王冠人
+									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立台灣大學數學系萬俊彥
+								</li>
+							</ul>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="https://csx.aca.ntu.edu.tw/1071CSX4001_">
+									<i class="icon-book"></i>&nbsp;
+									CSX 4001 資料科學程式設計 Data Science Programming
+								</a>
+							</h2>
+							<ul>
+								<li>
+									課程助教:
+									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立臺灣大學電機系趙冠豪
+								</li>
+							</ul>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="https://csx.aca.ntu.edu.tw/1071CSX5001_">
+									<i class="icon-book"></i>&nbsp;
+									CSX 5001 進階軟體開發專題 Special Topics on Advanced Software Development
+								</a>
+							</h2>
+							<ul>
+								<li>
+									課程助教:
+									<br/>&nbsp;<i class="icon-male"></i>&nbsp;國立臺灣大學園藝系黃侲艗
+								</li>
+							</ul>
+						</div>
+						<!-- end project -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button id="saveBtn" class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+	<!-- service modal -->
+	<div id="serviceModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="serviceModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 id="serviceModalLabel">Service</h2>
+		</div>
+		<div class="modal-body">
+			<!-- <h4>Research</h4> -->
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#service_one" data-toggle="tab">2018</a>
+					</li>
+					<li>
+						<a href="#service_two" data-toggle="tab">2017
+						</a>
+					</li>
+					<li>
+						<a href="#service_three" data-toggle="tab">2016</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="service_one">
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://knowledge.colife.org.tw/seminar_one.aspx?sid=20180713095714575">
+									<i class="icon-book"></i>&nbsp;
+									資策會資安所 2018 高中生數位應用研習營
+								</a>
+							</h2>
+							<ul>
+								<li>
+									<a href="https://goo.gl/AMuTZM">
+										2018 年7月 19 日活動花絮
+									</a>
+								</li>
+								<li>
+									<a href="https://goo.gl/usosSy">
+										2018 年8月 09 日活動花絮
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="https://twbts.tk:3000/">
+									<i class="icon-book"></i>&nbsp;
+									BTS無界塾 創業課
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://lope.linguistics.ntu.edu.tw/ling2tech">
+									<i class="icon-book"></i>&nbsp;
+									台大語言所 AI科技與語言學應用沙龍暨就業實習媒合會
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+					</div>
+					<div class="tab-pane" id="service_two">
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://aca.tmu.edu.tw/6dt2/recruit.php?Sn=210">
+									<i class="icon-book"></i>&nbsp;
+									臺北醫學大學教師發展中心 CS+X 案例分享與教學成效
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://www.wisland.org/Web/Main.php?stat=TtIssue&Id=23&cp=4">
+									<i class="icon-book"></i>&nbsp;
+									世界公民島 台灣AI行動計畫
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://communicationx.caece.net/">
+									<i class="icon-book"></i>&nbsp;
+									跨領域工程溝通的微課程建置，科技轉化與成效評量
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://www.e23.nkfust.edu.tw/104plan/event/237">
+									<i class="icon-book"></i>&nbsp;
+									國立高雄科技大學教學服務組 擁抱跨界力－CS+X的新方向
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://wraconsensus.weebly.com/35611241073328735506312431.html">
+									<i class="icon-book"></i>&nbsp;
+									水利署水利防災檢討策進共識營 聊天機器人－案例與發展趨勢
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+					</div>
+					<div class="tab-pane" id="service_three">
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://www.urbnext.org.tw/index.php/course_content/page/8/9">
+									<i class="icon-book"></i>&nbsp;
+									無邊界大學 新聞資訊視覺化
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+						<!-- project -->
+						<div class="tab-pane-content">
+							<h2>
+								<a href="http://www.sysage.com.tw/Guest/Training/Training_Sysage_One.aspx?id=1560">
+									<i class="icon-book"></i>&nbsp;
+									聚碩科技 運用Ｒ進入程式交易的世界-交易策略績效回測
+								</a>
+							</h2>
+						</div>
+						<!-- end project -->
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="modal-footer">
 			<button id="saveBtn" class="btn" data-dismiss="modal" aria-hidden="true">Close</button>

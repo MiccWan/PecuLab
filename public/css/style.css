@@ -59,9 +59,8 @@ body {
 	background:#fff;
 	color: #333;
 	font-size: 16px;
-	font-weight:300;
-	/*font-family:'Open Sans', Arial, sans-serif;*/
-	font-family: "微軟正黑體", "Microsoft JhengHei", "標楷體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:400;
+	font-family: "微軟正黑體", "Microsoft JhengHei", "標楷體", 'Open Sans', Arial, sans-serif;
 }
 
 body {
