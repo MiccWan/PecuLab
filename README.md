@@ -1,6 +1,6 @@
 # PecuLab
 PecuLab is a website developed by the lab's members.
-* **Link:** The live server opens [here](https://github.com/MiccWan).
+* **Link:** The live server opens [here](http://ec2-18-191-117-61.us-east-2.compute.amazonaws.com:7123/).
 
 ## Installation
 Download the repository
