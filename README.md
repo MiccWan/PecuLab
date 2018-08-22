@@ -13,7 +13,7 @@ Once you have downloaded Node.js, run the following commands:
 ```bash
 $ npm install
 ```
-Then add a file named config.json, setting your port as follow:
+Then add a file named config.json, setting your port and password as follow:
 ```bash
 $ touch config.json
 ```
