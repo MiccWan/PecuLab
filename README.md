@@ -1,6 +1,6 @@
 # PecuLab
 PecuLab is a website developed by the lab's members.
-* **Link:** The live server opens [here](https://github.com/MiccWan).
+* **Link:** The live server opens [here](http://ec2-18-191-117-61.us-east-2.compute.amazonaws.com:7123/).
 
 ## Installation
 Download the repository
@@ -13,14 +13,15 @@ Once you have downloaded Node.js, run the following commands:
 ```bash
 $ npm install
 ```
-Then add a file named config.json, setting your port as follow:
+Then add a file named config.json, setting your port and password as follow:
 ```bash
 $ touch config.json
 ```
 In config.json:
 ```json
 {
-	"port":<YOUR_PORT>
+	"port": <YOUR_PORT>,
+	"password": <YOUR_PASSWORD>
 }
 ```
 
