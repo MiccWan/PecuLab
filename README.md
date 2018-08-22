@@ -20,7 +20,8 @@ $ touch config.json
 In config.json:
 ```json
 {
-	"port":<YOUR_PORT>
+	"port": <YOUR_PORT>,
+	"password": <YOUR_PASSWORD>
 }
 ```
 
