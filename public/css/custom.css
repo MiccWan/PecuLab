@@ -41,3 +41,8 @@
 div[data-toggle="modal"] {
 	cursor: pointer;
 }
+#header-wrapper {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
