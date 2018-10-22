@@ -21,7 +21,8 @@ In config.json:
 ```json
 {
 	"port": <YOUR_PORT>,
-	"password": <YOUR_PASSWORD>
+	"password": <YOUR_PASSWORD>,
+    "DEBUG": <true/false>
 }
 ```
 
