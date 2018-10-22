@@ -22,7 +22,7 @@ In config.json:
 {
 	"port": <YOUR_PORT>,
 	"password": <YOUR_PASSWORD>,
-    "DEBUG": <true/false>
+	"DEBUG": <true/false>
 }
 ```
 
