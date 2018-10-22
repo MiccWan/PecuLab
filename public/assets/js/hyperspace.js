@@ -34,13 +34,24 @@
 
 		// Hack: Activate non-input submits.
 			$('form').on('click', '.submit', function(event) {
+				console.log("triggered")
 
 				// Stop propagation, default.
 					event.stopPropagation();
 					event.preventDefault();
 
 				// Submit form.
-					$(this).parents('form').submit();
+					// $(this).parents('form').submit();
+					$.post('/contact', {"test":"test"}, function (res, status){
+						if (status == 'success'){
+							alert(res)
+							window.location.href = ""
+						}
+						else {
+							alert("Connection failed.")
+							console.log("logs:", res)
+						}
+					})
 
 			});
 
@@ -72,7 +83,12 @@
 
 					var	$this = $(this),
 						id = $this.attr('href'),
-						$section = $(id);
+						$section;
+
+					// Only set for inner link
+						if (id[0] != '#')
+							return;
+						else $section = $(id)
 
 					// No section for this link? Bail.
 						if ($section.length < 1)

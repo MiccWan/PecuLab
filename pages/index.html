@@ -21,8 +21,9 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Who we are</a></li>
-							<li><a href="#one">Teams</a></li>
-							<li><a href="#two">Pictures</a></li>
+							<li><a href="/teams">Teams</a></li>
+							<li><a href="/pictures">Pictures</a></li>
+							<li><a href="/forty">Elements</a></li>
 							<li><a href="#three">Get in touch</a></li>
 						</ul>
 					</nav>
@@ -33,18 +34,14 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-				<div id="particles-js">
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Pecu Lab</h1>
-							<p> Remember, it's always the peculiar ones who change the world.<br>
-								And we are <strong>peculiar.</strong></p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-				</div>
+				<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<div id="particle-js"></div>
+					<div class="inner">
+						<h1>Pecu Lab</h1>
+						<p> Remember, it's always the peculiar ones who change the world.<br>
+							And we are <strong>peculiar</strong>.</p>
+					</div>
+				</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
@@ -53,9 +50,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>文字探勘用於金融財報上解讀</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p class="caution">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="/team1" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -65,9 +62,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>數位貨幣套利平台</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p class="caution">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="/team2" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -77,9 +74,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>深度增強式學習交易策略平台</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p class="caution">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="/team3" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -94,10 +91,10 @@
 							<section>
 								<div class="box alt">
 									<div class="row gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt=""></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt=""></span></div>
-										<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt=""></span></div>
+										<div class="col-12"><span class="image fit"><img src="images/blog/cropped.jpg" alt=""></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/icons/1.png" alt=""></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/icons/2.png" alt=""></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/icons/3.png" alt=""></span></div>
 									</div>
 								</div>
 							</section>
@@ -111,10 +108,10 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>For more information, feel free to leave your name and a brief message below, or contact us by email.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form id="contactForm" method="post" action="/contact">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -122,7 +119,7 @@
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<input type="email" name="email" id="email" />
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
@@ -131,33 +128,31 @@
 										</div>
 										<ul class="actions">
 											<li><a href="" class="button submit">Send Message</a></li>
+											<li><input type="reset" value="Clear" /></li>
 										</ul>
 									</form>
 								</section>
 								<section>
 									<ul class="contact">
-										<li>
+										<!-- <li>
 											<h3>Address</h3>
 											<span>12345 Somewhere Road #654<br />
 											Nashville, TN 00000-0000<br />
 											USA</span>
-										</li>
+										</li> -->
 										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
+											<a href="#">peculab@gmail.com</a>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Phone</h3>
 											<span>(000) 000-0000</span>
-										</li>
+										</li> -->
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
 												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
 												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
@@ -172,7 +167,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; PecuLab. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -186,6 +181,13 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/hyperspace.js"></script>
 			<script src="assets/js/particles.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+				    particlesJS.load('particle-js', 'assets/particles.json', function() {
+						console.log('callback - particles.js config loaded');
+					});
+				});
+			</script>
 
 	</body>
 </html>
