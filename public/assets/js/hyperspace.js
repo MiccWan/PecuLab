@@ -82,13 +82,8 @@
 				.each(function() {
 
 					var	$this = $(this),
-						id = $this.attr('href'),
-						$section;
-
-					// Only set for inner link
-						if (id[0] != '#')
-							return;
-						else $section = $(id)
+						id = $this.attr('scroll'),
+						$section = $(id)
 
 					// No section for this link? Bail.
 						if ($section.length < 1)
