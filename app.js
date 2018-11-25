@@ -6,6 +6,7 @@ var app 		= require('express')()
 var server 		= require('http').Server(app)
 var bodyParser 	= require('body-parser')
 var shell 		= require('shelljs');
+var pug			= require('pug')
 
 // Default settings
 var config 	= require('./config.json')
@@ -16,6 +17,9 @@ app.use('/', express.static(__dirname + '/public'))
 
 // Body parser
 app.use(bodyParser.urlencoded({ extended: true }))
+
+// Set view engine
+app.set('view engine', 'pug')
 
 // GET router
 var router = require('./routers');

@@ -1,0 +1,68 @@
+if template == 'hyperspace'
+	// Footer
+	footer#footer.wrapper.style1-alt
+		.inner
+			ul.menu
+				li © PecuLab. All rights reserved.
+				li
+					| Design: 
+					a(href='http://html5up.net') HTML5 UP
+
+else if template == 'forty'
+	// Contact
+	section#contact
+		.inner
+			section
+				form(method='post', action='#')
+					.fields
+						.field.half
+							label(for='name') Name
+							input#name(type='text', name='name')
+						.field.half
+							label(for='email') Email
+							input#email(type='text', name='email')
+						.field
+							label(for='message') Message
+							textarea#message(name='message', rows='6')
+					ul.actions
+						li
+							input.primary(type='submit', value='Send Message')
+						li
+							input(type='reset', value='Clear')
+			section.split
+				section
+					.contact-method
+						span.icon.alt.fa-envelope
+						h3 Email
+						a(href='#') peculab@gmail.com
+				section
+					.contact-method
+						span.icon.alt.fa-phone
+						h3 Phone
+						span (000) 000-0000 x12387
+				section
+					.contact-method
+						span.icon.alt.fa-home
+						h3 Address
+						span
+							| 106台北市大安區羅斯福路四段1號
+							br
+							| 博理館 515 室
+	// Footer
+	footer#footer
+		.inner
+			ul.icons
+				li
+					a.icon.alt.fa-facebook(href='#')
+						span.label Facebook
+				li
+					a.icon.alt.fa-github(href='#')
+						span.label GitHub
+			ul.copyright
+				li © PecuLab. All rights reserved.
+				li
+					| Design: 
+					a(href='https://html5up.net') HTML5 UP
+
+else
+	script console.log('Warning: No template name specified.')

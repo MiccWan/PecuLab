@@ -1,0 +1,85 @@
+doctype html
+//
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+html
+
+	- var title = 'Teams'
+	- var template = 'forty'
+	- var is_landing = true
+	include templates/header.pug
+
+	body.is-preload
+		// Wrapper
+		#wrapper
+
+			include templates/nav.pug
+
+			// Banner
+			section#banner.style2
+				.inner
+					span.image
+						img(src='images/pic07.jpg', alt='')
+					header.major
+						h1 Teams
+					.content
+						p.caution
+							| Lorem ipsum dolor sit amet nullam consequat
+							br
+							| sed veroeros. tempus adipiscing nulla.
+			// Main
+			#main
+				// One
+				section#one
+					.inner
+						header.major
+							h2.caution Quotee
+						p.caution blablabla.
+				// Two
+				section#two.spotlights
+					mixin spotlights(title, content, img_href, link_href, caution)
+						section
+							a.image(href=link_href)
+								img(src=img_href, alt='', data-position='center center')
+							.content
+								.inner
+									header.major
+										h3= title
+									p(class=caution?'caution':'')= content
+									ul.actions
+										li
+											a.button(href=link_href) Learn more
+
+					+spotlights('文字探勘用於金融財報上解讀', 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.', '/images/pic01.jpg', '/team1', true)
+
+					+spotlights('數位貨幣套利平台', 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.', '/images/pic02.jpg', '/team2', true)
+
+					+spotlights('深度增強式學習交易策略平台', 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.', '/images/pic03.jpg', '/team3', true)
+
+			include templates/footer.pug
+
+		include templates/script.pug
+
+		script(type='text/javascript').
+			jQuery(document).ready(function(){
+				jQuery('form').on('click', '.submit', function(event) {
+
+					// Stop propagation, default.
+					event.stopPropagation();
+					event.preventDefault();
+
+					// Submit form.
+					// $(this).parents('form').submit();
+					$.post('/contact', {"test": "test"}, function (res, status){
+						if (status == 'success'){
+							alert(res)
+							window.location.href = ""
+						}
+						else {
+							alert("Connection failed.")
+							console.log("logs:", res)
+						}
+					})
+				});
+			});

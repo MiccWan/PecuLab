@@ -1,25 +1,23 @@
 var express = require('express');
 var router = express.Router();
 
-// Routers list
-let route_list = {
-	"/" : "/pages/index.html",
-	"/forty": "/pages/forty_ele.html",
-	"/hyperspace": "/pages/hyperspace_ele.html",
-	"/teams": "/pages/teams.html",
-	"/team1": "/pages/team1.html",
-	"/team2": "/pages/team2.html",
-	"/team3": "/pages/team3.html",
-	"/restart": "/pages/restart.html",
-	"/forty": "/pages/forty_ele.html",
-	"/pictures": "/pages/pictures.html"
+// Render list
+let render_list = {
+	"/" : "index",
+	"/teams": "teams",
+	"/team1": "team1",
+	"/team2": "team2",
+	"/team3": "team3",
+	"/elements": "elements",
+	"/restart": "restart",
+	"/pictures": "pictures"
 }
 
-for (let key in route_list){
-	let val = route_list[key]
+for (let key in render_list){
+	let val = render_list[key]
 	router.get(key, function(req, res){
 		console.log(`[Connect] GET request to '${key}'`)
-		res.sendFile(__dirname + val);
+		res.render(val);
 	})
 }
 

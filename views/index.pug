@@ -1,0 +1,137 @@
+doctype html
+//
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+html
+	- var template = 'hyperspace'
+	include templates/header.pug
+	body.is-preload
+
+		// Sidebar
+		section#sidebar
+			.inner
+				nav
+					ul
+						li
+							a(href='#intro', scroll='#intro') Who we are
+						li
+							a(href='/teams', scroll='#one') Teams
+						li
+							a(href='/pictures', scroll='#two') Pictures
+						li
+							a(href='/elements') Elements
+						li
+							a(href='#three', scroll='#three') Get in touch
+
+		// Wrapper
+		#wrapper
+
+			// Intro
+			section#intro.wrapper.style1.fullscreen.fade-up
+				#particle-js
+				.inner
+					h1 Pecu Lab
+					p
+						| Remember, it's always the peculiar ones who change the world.
+						br
+						| 			And we are 
+						strong peculiar
+						| .
+
+			// One
+			section#one.wrapper.style2.spotlights
+				mixin spotlights(title, content, img_href, link_href)
+					section
+						a.image(href='#')
+							img(src=img_href, alt='', data-position='center center')
+						.content
+							.inner
+								h2= title
+								p.caution= content
+								ul.actions
+									li
+										a.button(href=link_href) Learn more
+
+				+spotlights('文字探勘用於金融財報上解讀', 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.', '/images/pic01.jpg', '/team1')
+
+				+spotlights('數位貨幣套利平台', 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.', '/images/pic02.jpg', '/team2')
+
+				+spotlights('深度增強式學習交易策略平台', 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.', '/images/pic03.jpg', '/team3')
+
+			// Two
+			section#two.wrapper.style3.fade-up
+				.inner
+					h2 Pictures
+					hr
+					section
+						.box.alt
+							.row.gtr-uniform
+								.col-12
+									span.image.fit
+										img(src='/images/blog/cropped.jpg', alt='')
+								.col-4
+									span.image.fit
+										img(src='/images/icons/1.png', alt='')
+								.col-4
+									span.image.fit
+										img(src='/images/icons/2.png', alt='')
+								.col-4
+									span.image.fit
+										img(src='/images/icons/3.png', alt='')
+					ul.actions
+						li
+							a.button(href='/pictures') Learn more
+
+			// Three
+			section#three.wrapper.style1.fade-up
+				.inner
+					h2 Get in touch
+					p
+						| For more information, feel free to leave your name and a brief message below, or contact us by email.
+					.split.style1
+						section
+							form#contactForm(method='post', action='/contact')
+								.fields
+									.field.half
+										label(for='name') Name
+										input#name(type='text', name='name')
+									.field.half
+										label(for='email') Email
+										input#email(type='email', name='email')
+									.field
+										label(for='message') Message
+										textarea#message(name='message', rows='5')
+								ul.actions
+									li
+										a.button.submit(href='') Send Message
+									li
+										input(type='reset', value='Clear')
+						section
+							ul.contact
+								li
+									h3 Email
+									a(href='#') peculab@gmail.com
+								li
+									h3 Social
+									ul.icons
+										li
+											a.fa-facebook(href='#')
+												span.label Facebook
+										li
+											a.fa-github(href='#')
+												span.label GitHub
+
+			include templates/footer.pug
+			
+		include templates/script.pug
+
+		// partical effect
+		script(src='/assets/js/particles.js')
+		script(type='text/javascript').
+			$(document).ready(function(){
+				particlesJS.load('particle-js', '/assets/particles.json', function() {
+					console.log('callback - particles.js config loaded');
+				});
+			});

@@ -1,0 +1,19 @@
+head
+	if title
+		title= title
+	else
+		title Pecu Lab
+	meta(charset='utf-8')
+	meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+	if template == "hyperspace"
+		link(rel='stylesheet', href='/assets/css/hyperspace.css')
+		noscript
+			link(rel='stylesheet', href='/assets/css/hyperspace_noscript.css')
+	else if template == "forty"
+		link(rel='stylesheet', href='/assets/css/forty.css')
+		noscript
+			link(rel='stylesheet', href='/assets/css/forty_noscript.css')
+	else 
+		script console.log('Warning: No template name specified.')
+
+	link(rel='stylesheet', href='/assets/css/custom.css')

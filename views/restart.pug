@@ -1,0 +1,8 @@
+html
+	head
+		title Restart server
+	body
+		form(action='/restart', method='POST')
+			label(for='userPassword') Password: 
+			input#userPassword(name='password', type='password')
+			input(type='submit', value='Submit')

@@ -1,0 +1,13 @@
+// Scripts
+script(src='/assets/js/jquery.min.js')
+script(src='/assets/js/jquery.scrollex.min.js')
+script(src='/assets/js/jquery.scrolly.min.js')
+script(src='/assets/js/browser.min.js')
+script(src='/assets/js/breakpoints.min.js')
+script(src='/assets/js/util.js')
+if template == 'hyperspace'
+	script(src='/assets/js/hyperspace.js')
+else if template == 'forty'
+	script(src='/assets/js/forty.js')
+else 
+	script console.log('Warning: No template name specified.')
