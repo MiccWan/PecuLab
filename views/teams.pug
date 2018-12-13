@@ -60,26 +60,4 @@ html
 			include templates/footer.pug
 
 		include templates/script.pug
-
-		script(type='text/javascript').
-			jQuery(document).ready(function(){
-				jQuery('form').on('click', '.submit', function(event) {
-
-					// Stop propagation, default.
-					event.stopPropagation();
-					event.preventDefault();
-
-					// Submit form.
-					// $(this).parents('form').submit();
-					$.post('/contact', {"test": "test"}, function (res, status){
-						if (status == 'success'){
-							alert(res)
-							window.location.href = ""
-						}
-						else {
-							alert("Connection failed.")
-							console.log("logs:", res)
-						}
-					})
-				});
-			});
+		include templates/form.pug

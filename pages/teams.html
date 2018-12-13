@@ -213,21 +213,21 @@
 				    	console.log("jizz")
 
 						// Stop propagation, default.
-							event.stopPropagation();
-							event.preventDefault();
+						event.stopPropagation();
+						event.preventDefault();
 
 						// Submit form.
-							// $(this).parents('form').submit();
-							$.post('/contact', {"test": "test"}, function (res, status){
-								if (status == 'success'){
-									alert(res)
-									window.location.href = ""
-								}
-								else {
-									alert("Connection failed.")
-									console.log("logs:", res)
-								}
-							})
+						// $(this).parents('form').submit();
+						$.post('/contact', {"test": "test"}, function (res, status){
+							if (status == 'success'){
+								alert(res)
+								window.location.href = ""
+							}
+							else {
+								alert("Connection failed.")
+								console.log("logs:", res)
+							}
+						})
 
 					});
 					console.log("jizz")

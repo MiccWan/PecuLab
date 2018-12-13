@@ -2,11 +2,11 @@
 
 // Require package
 var express 	= require('express')
-var app 		= require('express')()
-var server 		= require('http').Server(app)
+var app 	= require('express')()
+var server 	= require('http').Server(app)
 var bodyParser 	= require('body-parser')
-var shell 		= require('shelljs');
-var pug			= require('pug')
+var shell 	= require('shelljs');
+var pug		= require('pug')
 
 // Default settings
 var config 	= require('./config.json')
@@ -24,6 +24,9 @@ app.set('view engine', 'pug')
 // GET router
 var router = require('./routers');
 app.use('/', router);
+app.get('/testteams', function(req, res){
+	res.sendFile(__dirname + '/pages/teams.html')
+})
 
 // POST routers
 app.post('/restart', function(req, res){
@@ -37,7 +40,7 @@ app.post('/restart', function(req, res){
 app.post('/contact', function(req, res){
 	console.log("[Connect] POST request to '/contact'")
 	if (config.DEBUG) console.log(`[Debug] Req.body = ${req.body}`)
-	res.send("We have received your message.")
+	res.send('We have received your message.')
 })
 
 // Listen on port

@@ -26,7 +26,7 @@ else if template == 'forty'
 							textarea#message(name='message', rows='6')
 					ul.actions
 						li
-							input.primary(type='submit', value='Send Message')
+							a(class='button submit primary', href='') Send Message
 						li
 							input(type='reset', value='Clear')
 			section.split
@@ -35,11 +35,8 @@ else if template == 'forty'
 						span.icon.alt.fa-envelope
 						h3 Email
 						a(href='#') peculab@gmail.com
-				section
-					.contact-method
-						span.icon.alt.fa-phone
-						h3 Phone
-						span (000) 000-0000 x12387
+						br
+						a(href='#') peculab@outlook.com
 				section
 					.contact-method
 						span.icon.alt.fa-home
@@ -48,16 +45,14 @@ else if template == 'forty'
 							| 106台北市大安區羅斯福路四段1號
 							br
 							| 博理館 515 室
+				section
+					.contact-method
+						span.icon.alt.fa-facebook
+						h3 Facebook
+						a(href='https://www.facebook.com/groups/283207588460616/?ref=br_rs') PecuClub
 	// Footer
 	footer#footer
 		.inner
-			ul.icons
-				li
-					a.icon.alt.fa-facebook(href='#')
-						span.label Facebook
-				li
-					a.icon.alt.fa-github(href='#')
-						span.label GitHub
 			ul.copyright
 				li © PecuLab. All rights reserved.
 				li
